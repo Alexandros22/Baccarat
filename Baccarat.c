@@ -51,7 +51,7 @@ void main()
 				if (b>x || b<=0)
 					printf("Please careful with your money!!\n");
 			}while (b>x || b<=0);		// check the bet // 
-			x=x-b;						// money - bet //
+			x=x-b;				// money - bet //
 			h=(A[i-2]+A[i-3])%10;		// sum of computer //
 			do
 			{
@@ -66,8 +66,8 @@ void main()
 					i=i-1;
 				}
 				else if (ans=='N')
-					printf("\nYour sum is:%d\n", m); // else it continues //
-			}while (ans!='Y' && ans!='N');	// check the ans //
+					printf("\nYour sum is:%d\n", m); 	// else it continues //
+			}while (ans!='Y' && ans!='N');		// check the ans //
 			if (h==0)
 			{
 				printf("\nThe pc takes third card!\n");
@@ -81,7 +81,7 @@ void main()
 					printf("\nThe pc do not take the third card!\n");
 				else
 				{
-					printf("\nThe pc takes third card!\n");					// possibility to take another card the computer //
+					printf("\nThe pc takes third card!\n");		// possibility to take another card the computer //
 					h=(h+A[i-5])%10;
 					i=i-1;		// reduces the number of the cards //
 				}
@@ -126,7 +126,7 @@ void main()
 				for (j=i;j>=1;j=j-1)
 					printf("%d, ", A[j]);	// if ans3=Yes then shows the cards //
 			}
-			if (ans3=='Y')			// stirring the cards and exit from this round //
+			if (ans3=='Y')				// stirring the cards and exit from this round //
 				ans2='E';
 			else
 			{
